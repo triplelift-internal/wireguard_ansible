@@ -27,5 +27,5 @@
 - name:  Download the new client config
   fetch: 
     src: "~/{{ new_client }}.conf"
-    dest: "wireguard_role/profiles/"
+    dest: "{{ client_config_path }}/"
     flat: yes
